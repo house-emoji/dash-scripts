@@ -1,0 +1,15 @@
+settings:
+  delay: 1
+devices:
+  40:b4:cd:14:67:15:
+    name: a_b1
+    user: pi
+    cmd: myCommand
+  44:65:0D:48:FA:88:
+    name: a_b2
+    user: pi
+    cmd: myCommand2
+  40:b4:cd:20:c2:cb:
+    name: a_b3
+    user: pi
+    cmd: myCommand3
