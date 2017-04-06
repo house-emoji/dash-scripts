@@ -2,14 +2,16 @@ Dependencies:
 Python 3+
 
 pyphue  https://github.com/rdespoiu/PyPHue
-    pip install pyphue
+    - pip install pyphue
 
 phue https://github.com/studioimaginaire/phue
-    pip install phue
+    - pip install phue
 
 amazon-dash
-    pip install amazon-dash
+    - pip install amazon-dash
 
+tcpdump
+    - sudo apt-get install tcpdump python-scapy
 
 pyphue is used ONLY for authentication with the bridge (ocassional) and to get the bridge's current IP address.
 All other light operations are done with phue, which has a richer API and is more up to date.
@@ -40,5 +42,9 @@ Argument Documentation
     How long you want the action to take in seconds
 
 
-Example:
+CLI Example:
 hue_cli.py -groups "Alex Room" "Hallway" "Living Room" -lights "Tyler Hallway" -action "on" color 180 255 255
+
+How to set up Daemon:
+Open the amazon-dash.yaml, and add your button, name, and CLI command
+
