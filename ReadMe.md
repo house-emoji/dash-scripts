@@ -46,5 +46,7 @@ CLI Example:
 hue_cli.py -groups "Alex Room" "Hallway" "Living Room" -lights "Tyler Hallway" -action "on" color 180 255 255
 
 How to set up Daemon:
-Open the amazon-dash.yaml, and add your button, name, and CLI command
+Make sure the permissions on the amazon-dash.yml are the following, or else IT WILL NOT RUN: View content: owner, change content: nobody, execute: nobody
+Open the amazon-dash.yml, and add your button, name, and CLI command
+Run "sudo amazon-dash run" in the directory with the amazon-dash.yml
 
