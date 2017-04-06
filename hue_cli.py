@@ -80,7 +80,7 @@ if __name__ == "__main__":
                'sat': args.color[1],
                'bri': args.color[2],
                'transitiontime': args.fade}
-
+    print('Running command: ', command)
     bridge.set_light(setLights, command)
 
 

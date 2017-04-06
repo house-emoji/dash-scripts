@@ -2,13 +2,13 @@ Dependencies:
 Python 3+
 
 pyphue  https://github.com/rdespoiu/PyPHue
-    - pip install pyphue
+    - sudo pip3 install pyphue
 
 phue https://github.com/studioimaginaire/phue
-    - pip install phue
+    - sudo pip3 install phue
 
 amazon-dash
-    - pip install amazon-dash
+    - sudo pip3 install amazon-dash
 
 tcpdump
     - sudo apt-get install tcpdump python-scapy
