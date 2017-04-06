@@ -37,7 +37,7 @@ Argument Documentation
     The color you want the action to be performed with. Color is in HSV
     0-360  0-254 0-254
       H       S     V
-
+ 
 -Fade
     How long you want the action to take in seconds
 
