@@ -38,3 +38,7 @@ Argument Documentation
 
 -Fade
     How long you want the action to take in seconds
+
+
+Example:
+hue_cli.py -groups "Alex Room" "Hallway" "Living Room" -lights "Tyler Hallway" -action "on" color 180 255 255

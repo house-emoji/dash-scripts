@@ -14,7 +14,7 @@ print("User: ", hue.user)
 username = "YcWYkhhe8BUSke0QkAJ07j7VWk5JpTZZEq4CQmiD"  # Update this after a bridge reset
 clamp = lambda num, minN, maxN: max(min(maxN, num), minN)  # For keeping numbers within a range
 
-# hue_cli.py -groups "Alex Room" "Hallway" "Living Room" -lights "Tyler Hallway" -action "on" color 255 255 255
+
 #  bridge.set_group("Alex Room", 'on', True)
 
 if __name__ == "__main__":
