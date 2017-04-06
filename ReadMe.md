@@ -5,7 +5,7 @@ pyphue  https://github.com/rdespoiu/PyPHue
     pip install pyphue
 
 phue https://github.com/studioimaginaire/phue
-    pip install pyhue
+    pip install phue
 
 amazon-dash
     pip install amazon-dash
@@ -36,5 +36,5 @@ Argument Documentation
     0-360  0-254 0-254
       H       S     V
 
-- Fade
+-Fade
     How long you want the action to take in seconds
