@@ -1,7 +1,6 @@
-import pyphue
 import argparse
 from phue import *
-
+import requests
 """
 IF YOU NEED TO GET THE USER INFO (Bridge gets reset):
 hue = pyphue.PyPHue(wizard=True)
@@ -27,7 +26,7 @@ if __name__ == "__main__":
     parser.add_argument("-lights", "--lights", type=str, nargs='+', default=[],
                         help="A list of light names as written in the hue app. Case sensitive.")
 
-    parser.add_argument("-action", "--action", type=str, required=True,
+    parser.add_argument("-action", "--action", type=str, default='on',
                         help="The action you wish the lights+groups to perform. Not case sensitive.")
 
     parser.add_argument("-color", "--color", type=int, nargs=3, default=[254, 254, 254],
@@ -53,7 +52,7 @@ if __name__ == "__main__":
 
 
     # Connect to the bridge
-    bridge_ip = pyphue.PyPHue(user=username).ip
+    bridge_ip = requests.get('https://www.meethue.com/api/nupnp', timeout = 10).json()[0]['internalipaddress']
     bridge = Bridge(ip=bridge_ip, username=username)
 
     setLights = []

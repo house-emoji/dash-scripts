@@ -1,8 +1,6 @@
 Dependencies:
 Python 3+
 
-pyphue  https://github.com/rdespoiu/PyPHue
-    - sudo pip3 install pyphue
 
 phue https://github.com/studioimaginaire/phue
     - sudo pip3 install phue
@@ -12,9 +10,6 @@ amazon-dash
 
 tcpdump
     - sudo apt-get install tcpdump python-scapy
-
-pyphue is used ONLY for authentication with the bridge (ocassional) and to get the bridge's current IP address.
-All other light operations are done with phue, which has a richer API and is more up to date.
 
 
 Argument Documentation
