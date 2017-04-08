@@ -1,5 +1,7 @@
 # Dash Scripts
 
+A collection of scripts to run when our Amazon Dash buttons are pressed.
+
 Dependencies:
 Python 3+
 
