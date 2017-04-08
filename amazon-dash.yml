@@ -13,3 +13,7 @@ devices:
     name: a_b3
     user: pi
     cmd: python3 /home/pi/dash-scripts/hue_cli.py -groups "Alex Room" -action "toggle" -color 0 255 255 -fade 1
+  40:b4:cd:7c:76:ba:
+    name: t_b1
+    user: pi
+    cmd: python3 /home/pi/dash-scripts/hue_cli.py -groups "Tyler Room" -action "toggle" -fade 1
