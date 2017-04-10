@@ -16,4 +16,12 @@ devices:
   40:b4:cd:7c:76:ba:
     name: t_b1
     user: pi
-    cmd: python3 /home/pi/dash-scripts/hue_cli.py -groups "Tyler Room" -action "toggle" -color 34 30 255 -fade 1
+    cmd: python3 /home/pi/dash-scripts/hue_cli.py -groups "Tyler Room" -action "on" -color 34 30 255 -fade 1
+  40:b4:cd:c0:bf:af:
+    name: t_b2
+    user: pi
+    cmd: python3 /home/pi/dash-scripts/hue_cli.py -groups "Tyler Room" -action "on" -color 0 255 30 -fade 1
+  68:54:fd:6d:78:a9:
+    name: t_b3
+    user: pi
+    cmd: python3 /home/pi/dash-scripts/hue_cli.py -groups "Tyler Room" -action "off" -color 34 30 255 -fade 1
